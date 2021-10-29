@@ -1,0 +1,16 @@
+[package]
+name = "vvec3"
+version = "0.1.0"
+authors = ["VirxEC"]
+edition = "2021"
+description = "A group of useful linear algebra functions for 3d vectors"
+readme = "README.md"
+repository = "https://github.com/VirxEC/vvec3"
+license = "GPL-3.0-only"
+keywords = ["rocket-league", "rlbot", "physics", "linear-algebra"]
+categories = ["mathematics"]
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+panic = "abort"
